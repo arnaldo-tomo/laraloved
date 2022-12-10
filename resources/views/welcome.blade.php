@@ -19,10 +19,10 @@
             <thead class="thead thead">
                 <tr>
                     <th>I#D</th>
-                    <th>Home</th>
-                    <th>Dono</th>
-                    <th>cidade</th>
-                    <th>Tipo</th>
+                    <th>HONE</th>
+                    <th>DONO</th>
+                    <th>CIDADE</th>
+                    <th>TIPO</th>
                 </tr>
             </thead>
             <tbody>
