@@ -16,7 +16,7 @@ class CreateAlunoDisciplinasTable extends Migration
         Schema::create('aluno_disciplinas', function (Blueprint $table) {
             // $table->id();
             $table->foreignId('aluno_id')->constrained();
-            $table->foreignId('disciplina_id')->constrained();;
+            $table->foreignId('disciplina_id')->constrained();
             $table->timestamps();
         });
     }
