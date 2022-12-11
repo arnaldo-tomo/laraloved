@@ -23,6 +23,7 @@
                     <th>DONO</th>
                     <th>CIDADE</th>
                     <th>TIPO</th>
+                    <th>TIPO</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,15 +34,25 @@
                         <td>{{ $item->dono->nome }}</td>
                         <td>{{ $item->cidade->nome }}</td>
                         <td>{{ $item->tipo->nome }}</td>
+                        <td>{{ $item->user->email }}</td>
                     </tr>
                 @empty
-                    <tr>
-                        <td>Sem Nenhuma infromcacao</td>
+                    <tr class="text-center">
+                        <td class="text-center">Sem Nenhuma infromcacao</td>
                     </tr>
                 @endforelse
             </tbody>
 
         </table>
+
+
+        <br>
+        <div class="row">
+            <div class="col-6 col-6-offset">
+                {{ $user->home->nome }}
+
+            </div>
+        </div>
 
 
 
