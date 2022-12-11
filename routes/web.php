@@ -7,6 +7,6 @@ use App\Models\disciplinas;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $dado = alunos::all();
+    $dado = alunos::find(1);
     dd($dado);
 });
