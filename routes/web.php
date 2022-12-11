@@ -3,6 +3,7 @@
 use App\Http\Controllers\home;
 use App\Models\alunos;
 use App\Models\disciplina;
+use App\Models\disciplinas;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +18,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $aluno = alunos::find(1);
-    // dd($aluno->disciplina->disciplina);
-
-    return view('welcome');
 });
-
-// route::get('/home', [home::class, 'home'])->name('home');
