@@ -13,4 +13,9 @@ class dono extends Model
     {
         return $this->belongsTo(home::class);
     }
+
+    public function carro()
+    {
+        return $this->belongsToMany(carro::class);
+    }
 }
