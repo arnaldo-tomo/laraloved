@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class alunos extends Model
 {
     protected $table = 'alunos';
-    protected $fillable = ['aluno'];
+    protected $fillable = array('aluno');
     use HasFactory;
 
     public function disciplinas()
