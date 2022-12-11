@@ -8,5 +8,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $dado = alunos::find(1);
-    dd($dado);
+    dd($dado->disciplinas->disciplina);
 });
