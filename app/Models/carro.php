@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class carro extends Model
 {
     use HasFactory;
+    protected $fillable = ['nome'];
 
     public function dono()
     {
