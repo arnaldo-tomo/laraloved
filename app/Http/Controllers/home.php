@@ -16,9 +16,8 @@ class home extends Controller
         $alunos = aluno::find(1);
         $disciplina = disciplina::find(1);
 
-        echo $alunos->nome . "";
-        echo "        >>>>>>....        ";
-        echo $disciplina->aluno->nome;
+        echo $alunos->disciplina->nome;
+
 
         // $homes = ModelsHome::find(1);
         // $user = User::find(1);
