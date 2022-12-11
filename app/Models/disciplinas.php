@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class disciplinas extends Model
 {
-    use HasFactory;
     protected $table = 'disciplinas';
-    protected $fillable = 'disciplina';
+    protected $fillable =  array('disciplina');
+    use HasFactory;
 
     public function aluno()
     {
