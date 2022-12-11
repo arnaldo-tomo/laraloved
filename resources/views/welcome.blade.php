@@ -27,14 +27,11 @@
                 </tr>
             </thead>
             <tbody>
-                @forelse ($homes as $item)
+                @forelse ($carro as $item)
                     <tr>
-                        <td>{{ $item->id }}</td>
-                        <td>{{ $item->nome }}</td>
-                        <td>{{ $item->dono->nome }}</td>
-                        <td>{{ $item->cidade->nome }}</td>
-                        <td>{{ $item->tipo->nome }}</td>
-                        <td>{{ $item->user->email }}</td>
+                        {{-- <td>{{ $item->id }}</td> --}}
+                        {{-- <td>{{ $item->dono->nome }}</td> --}}
+
                     </tr>
                 @empty
                     <tr class="text-center">
@@ -49,7 +46,7 @@
         <br>
         <div class="row">
             <div class="col-6 col-6-offset">
-                {{ $user->home->nome }}
+                {{-- {{ $user->home->nome }} --}}
 
             </div>
         </div>
