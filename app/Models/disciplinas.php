@@ -8,9 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class disciplinas extends Model
 {
     use HasFactory;
+    protected $table = 'disciplinas';
+    protected $fillable = 'disciplina';
 
     public function aluno()
     {
-        return $this->belongsToMany(aluno::class);
+        return $this->belongsToMany(aluno::class, 'aluno_id');
     }
 }
