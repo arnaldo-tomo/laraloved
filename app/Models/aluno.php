@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class aluno extends Model
 {
     use HasFactory;
-    pro
+    protected $fillable = ['nome'];
+    public function disciplina()
+    {
+        return $this->belongsToMany(disciplina::class);
+    }
 }
