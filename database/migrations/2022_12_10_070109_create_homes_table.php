@@ -20,6 +20,7 @@ class CreateHomesTable extends Migration
             $table->id();
             $table->string('nome');
             $table->foreignId('dono_id');
+            $table->foreignId('user_id');
             $table->foreignId('tipo_id');
             $table->foreignId('cidade_id');
             $table->timestamps();
