@@ -14,7 +14,9 @@ class CreateAlunoDisciplinasTable extends Migration
     public function up()
     {
         Schema::create('aluno_disciplinas', function (Blueprint $table) {
-            $table->id();
+            // $table->id();
+            $table->foreignId('aluno_id')->constrained();
+            $table->foreignId('disciplina_id')->constrained();;
             $table->timestamps();
         });
     }
