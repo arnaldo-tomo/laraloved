@@ -23,4 +23,9 @@ class home extends Model
     {
         return $this->belongsTo(cidade::class);
     }
+
+    public function user()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
