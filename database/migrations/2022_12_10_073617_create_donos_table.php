@@ -16,7 +16,6 @@ class CreateDonosTable extends Migration
         Schema::create('donos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->timestamps();
         });
     }
 
