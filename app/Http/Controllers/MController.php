@@ -11,6 +11,6 @@ class MController extends Controller
     public function home()
     {
         $dado = disciplinas::find(1);
-        dd($dado->aluno->aluno);
+        dd($dado->aluno->id);
     }
 }
