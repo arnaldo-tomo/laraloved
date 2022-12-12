@@ -16,7 +16,6 @@ class CreateAlunosTable extends Migration
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
             $table->string('aluno');
-            $table->timestamps();
         });
     }
 
