@@ -14,8 +14,8 @@ class CreateCurosProfessorsTable extends Migration
     public function up()
     {
         Schema::create('curos_professors', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->foreignId('curso_id')->constrained();
+            $table->foreignId('professor_id')->constrained();
         });
     }
 
