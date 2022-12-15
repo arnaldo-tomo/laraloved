@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use AlunoDisciplina;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\alunos\alunos;
 use App\Models\cursos;
 use App\Models\disciplina\disciplinas;
 
@@ -12,7 +14,7 @@ class MController extends Controller
     public function home()
     {
 
-        $dado = cursos::find(1);
-        dd($dado->professor->nome);
+        $aluno = App\Models\alunos::all();
+        dd($aluno);
     }
 }
